@@ -7,7 +7,7 @@ function clickToShow() {
     var btn = $('.myBtnContainer .btn');
     console.log(btn.length);
     for (var i = 0; i < btn.length; i++) {
-        btn[i].addEventListener("click", function () {
+        btn[i].addEventListener("mouseover", function () {
             // var current = document.getElementsByClassName("is-active");
             var current = $('.is-active')
             current.removeClass('is-active');
@@ -28,7 +28,7 @@ function clickToShow() {
 
             $('.content').hide();
             // $(`.${selectedBtnClassContent}`).show();
-            $(`#${selectedBtnClassContent}`).show();
+            $(`#${selectedBtnClassContent}`).fadeIn(1000);
 
 
         });
