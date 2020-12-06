@@ -7,7 +7,7 @@ function clickToShow() {
 
     for (var i = 0; i < btn.length; i++) {
         btn[i].addEventListener("mouseover", function () {
-            // var current = document.getElementsByClassName("is-active");
+
             var current = $('.is-active')
             current.removeClass('is-active');
 
@@ -32,8 +32,13 @@ function hamburgerToShow() {
     var btn = $('#navbarHamburger .navbar-item');
 
     for (var i = 0; i < btn.length; i++) {
-        btn[i].addEventListener("click", function () {
-            // var current = document.getElementsByClassName("is-active");
+        btn[i].addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth',
+            });
+
             var current = $('.is-active')
             current.removeClass('is-active');
 
