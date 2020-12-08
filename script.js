@@ -57,9 +57,11 @@ function hamburgerToShow() {
     }
 }
 
+
 //////////////////////////// EXECUTION ////////////////////////////////////////
 
 $(document).ready(function () {
+
 
     $("#btn1-content").fadeIn(1000);
     $("#btn2-content").hide();
@@ -67,7 +69,9 @@ $(document).ready(function () {
     $("#btn4-content").hide();
 
     // Check for click events on the navbar burger icon
-    $(".navbar-burger").click(function () {
+    $(".navbar-burger").click(function (e) {
+        e.preventDefault;
+
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         $(".navbar-burger").toggleClass("is-active");
         $(".navbar-menu").toggleClass("is-active");
@@ -77,6 +81,23 @@ $(document).ready(function () {
     clickToShow();
     // hamburger menu section
     hamburgerToShow();
+
+
+    // var carousels = bulmaCarousel.attach('.carousel', {
+    //     slidesToScroll: 1,
+    //     slidesToShow: 2
+    // });
+
+    // console.log(carousels);
+    // console.log(carousels.length);
+
+    // for(var i = 0; i < carousels.length; i++) {
+    //     console.log(carousels[i]);
+    //     // Add listener to  event
+    //     carousels[i].on('before:show', state => {
+    //         console.log(state);
+    //     });
+    // }
 
 });
 
