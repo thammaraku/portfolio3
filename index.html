@@ -103,30 +103,67 @@
 
             <div class="content" id="btn1-content">
 
-                <p>My name is Thammarak Uppyokhin. I live in Cedar Park, TX. I am currently working at a networking company in Austin, TX. In the meantime, I currently enrolled on part-time full stack developer boot camp at university of Texas. I would like to learn about web developer and database to apply with my current job and also for my future career.</p>
+                <p>My name is Thammarak Uppyokhin. I live in Cedar Park, TX. I am currently working at a networking
+                    company in Austin, TX. In the meantime, I currently enrolled on part-time full stack developer boot
+                    camp at university of Texas. I would like to learn about web developer and database to apply with my
+                    current job and also for my future career.</p>
 
             </div>
 
             <div class="content" id="btn2-content">
-                    <section class="section">
-                        <div class="container">
-                            <!-- Start Carousel -->
-                            <div id="carousel-demo" class="carousel">
+                <section class="section">
+                    <div class="container">
+
+                        <!-- Start Carousel -->
+                        <!-- <div id="carousel-demo" class="carousel">
                                 <div class="carousel-item image is-256x256">
-                                    <!-- <img src="https://wikiki.github.io/images/singer.jpg" alt="" width="640" height="310" /> -->
-                                    <!-- <img src="http://lorempixel.com/1292/406/sports/" alt=""> -->
-                                    <!-- <img src="./assets/images/homework05_workday_scheduler.gif" alt="" width="1292" height="406" /> -->
+                                    <title>Workday Schedule</title>
+                                    <a href="https://github.com/thammaraku/homework_05_workday_scheduler" target="_blank"></a>
                                     <img src="./assets/images/homework05_workday_scheduler.gif" alt=""/>
                                 </div>
                                 <div class="carousel-item image is-256x256">
-                                    <!-- <img src="https://wikiki.github.io/images/sushi.jpg" alt="" width="640" height="310" /> -->
-                                    <!-- <img src="http://lorempixel.com/1292/406/cats/" alt=""> -->
                                     <img src="./assets/images/homework06_weather_dashboard.gif" alt=""/>
                                 </div>
+                            </div> -->
+                        <!-- End Carousel -->
+
+
+                        <div id="carouse" class="carousel">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-256x256 is-covered">
+                                        <img src="./assets/images/homework05_workday_scheduler.gif" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="item__title">
+                                        Workday Schedule
+                                    </div>
+                                    <div class="item__description">
+                                        <a href="https://github.com/thammaraku/homework_05_workday_scheduler"target="_blank">github link</a>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- End Carousel -->
+
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-256x256 is-covered">
+                                        <img src="./assets/images/homework06_weather_dashboard.gif" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="item__title">
+                                        Weather Dashboard
+                                    </div>
+                                    <div class="item__description">
+                                        <a href="https://github.com/thammaraku/homework_06_weather_dashboard"target="_blank">github link</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </section>
+
+                    </div>
+                </section>
             </div>
 
             <div class="content" id="btn3-content">
@@ -188,10 +225,10 @@
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <script>
-           var carousels = bulmaCarousel.attach('.carousel', {
-        slidesToScroll: 1,
-        slidesToShow: 1
-    });
+        var carousels = bulmaCarousel.attach('.carousel', {
+            slidesToScroll: 1,
+            slidesToShow: 1
+        });
     </script>
 
 </body>
