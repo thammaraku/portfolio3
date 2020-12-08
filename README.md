@@ -4,6 +4,7 @@
 updating your portfolio page and other materials to build toward being employer competitive.
 - update with project 1 and two exemplary homework assignments.
 - update GitHub profile with pinned repositories featuring project 1 and two exemplary assignments
+- add a link to download resume
 ### Github Repository URL
 https://github.com/thammaraku/homework_07_portfolio_new
 
