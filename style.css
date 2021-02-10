@@ -41,35 +41,8 @@
     margin-top: 1em;
     margin-bottom: 2em;
   }
-  
 
-  /* .hero {
-
-    &.has-background
-    position: relative
-    overflow: hidden
-    &-background
-    position: absolute
-    object-fit: cover
-    object-position: center center
-    width: 100%
-    height: 100%
-    &.is-transparent
-      opacity: 0.3
-
-
-  } */
-
-
-/* .hero-image {
-    background-image: url(./assets/images/pexels-pixabay-258149.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-} */
-
-
+/* Hero Background Image */
 .header-image {
     background-image: url(./assets/images/pexels-pixabay-258149.jpg);
     background-position: center center;
@@ -77,5 +50,10 @@
     background-attachment: fixed;
     background-size: cover;
     background-color: #999;
-    /* opacity: 0.3; */
+    /* filter:brightness(80%); */
+    /* filter:contrast(150%) */
+}
+
+.hero-body .container {
+  margin-bottom: 18rem;
 }
